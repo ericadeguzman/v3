@@ -38,18 +38,20 @@ export default function BasicCard(props: CardProps) {
        <Box>
           <img style={{ width: "100%", height: '10rem', objectFit: 'cover',}} src={imageURL} />
           </Box>
-      <CardContent sx={{
-          backgroundColor: isActive ? 'salmon' : '',
+      <CardContent 
+      sx={{
+          backgroundColor: isActive ? '#00467e' : '',
           color: isActive ? 'white' : '',
-        }}>
+        }}
+        >
          
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        <Typography sx={{ fontSize: 14, color: isActive ? 'white' : '', }} color="text.secondary" gutterBottom>
           {upperSubHead}
         </Typography>
         <Typography variant="h5" component="div">
           {mainHeader}
         </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+        <Typography sx={{ mb: 1.5,  color: isActive ? 'white' : '', }} color="text.secondary">
           {lowerSubhead}
         </Typography>
         <Typography variant="body2">
