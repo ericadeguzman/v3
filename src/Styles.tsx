@@ -7,7 +7,12 @@ const theme = createTheme ({
     // typography: {
     //     "fontFamily": `'Press Start 2P'`,
     // },
-    
+    typography: {
+      button: {
+        textTransform: 'none',
+        fontWeight: '400',
+      },
+    },
     palette: {
       background: {
         default: "#fff",
