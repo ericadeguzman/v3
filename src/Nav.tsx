@@ -24,7 +24,7 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = ['', 'About', 'Contact'];
+const navItems = ['About', 'Contact'];
 
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
@@ -46,7 +46,7 @@ export default function DrawerAppBar(props: Props) {
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
-            <RouterLink style={{textDecoration: "none", color: 'white',}} to={`/${item}`}>
+            <RouterLink style={{textDecoration: "none", color: '#00467E',}} to={`/${item}`}>
               <ListItemText primary={item} />
               </RouterLink>
             </ListItemButton>
