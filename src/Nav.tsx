@@ -38,7 +38,7 @@ export default function DrawerAppBar(props: Props) {
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography  sx={{ my: 2 }}>
       <RouterLink  to={`/`}>
-      Airportal
+      Home
       </RouterLink>
       </Typography>
       <Divider />
@@ -77,7 +77,7 @@ export default function DrawerAppBar(props: Props) {
             sx={{ flexGrow: 1, display: {  sm: 'block' } }}
           >
              <RouterLink style={{textDecoration: "none", color: 'white',}} to={`/`}>
-             <Typography>Airportal </Typography> </RouterLink>
+             <Typography>Home </Typography> </RouterLink>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
