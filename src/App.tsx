@@ -23,35 +23,63 @@ import DrawerAppBar from "./Nav";
 import { Link as RouterLink } from "react-router-dom";
 import Button from "@mui/material/Button";
 import Header from "./components/Header";
+import { useState } from "react";
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
 function App() {
+  const [isActive, setIsActive] = useState(false);
+  const handleClick = () => {
+    setIsActive((current) => !current);
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <Container sx={{ marginTop: 2, backgroundColor: "white" }} maxWidth="lg">
         <DrawerAppBar />
         <Grid container spacing={2}>
-        <Grid item xs={12}>
+          <Grid item xs={12}>
             <Box my={1}>
-              <Typography variant="h1">Hello World...</Typography>
+              <Typography variant="h1">Can I have some bacon!?</Typography>
             </Box>
           </Grid>
-          <Header mB={0} mT={0} title="Welcome... " />
+          <Header mB={0} mT={0} title="What are we earting today... " />
           <Grid item xs={12}>
-            <Typography variant="body1">
-              Bacon ipsum dolor amet ground round leberkas frankfurter bacon,
-              corned beef ham hock sausage swine pastrami pork chop buffalo tail
-              venison prosciutto. Meatball turkey ribeye, jowl capicola swine
-              pork ham hock landjaeger kielbasa tongue filet mignon strip steak
-              cow. Turkey ham hock pancetta pork loin. Jerky meatloaf prosciutto
-              meatball pork belly burgdoggen ribeye pork. Pork capicola tail
-              porchetta meatloaf.
-            </Typography>
+            <Box
+              sx={{ display: isActive ? "none" : "" }}
+              display="flex"
+              flexDirection="column"
+              alignItems="center"
+            >
+              <Typography sx={{ color: "red" }} variant="h3">
+                We're eatining some Baaaaacooonnnn!
+              </Typography>
+              <img
+                style={{
+                  padding: 2,
+                  width: "10rem",
+                  height: "10rem",
+                  objectFit: "cover",
+                }}
+                src="https://healthyrecipesblogs.com/wp-content/uploads/2021/03/oven-bacon-1-2021.jpg"
+              />
+              <Typography variant="body1">
+                Bacon ipsum dolor amet ground round leberkas frankfurter bacon,
+                corned beef ham hock sausage swine pastrami pork chop buffalo
+                tail venison prosciutto. Meatball turkey ribeye, jowl capicola
+                swine pork ham hock landjaeger kielbasa tongue filet mignon
+                strip steak cow. Turkey ham hock pancetta pork loin. Jerky
+                meatloaf prosciutto meatball pork belly burgdoggen ribeye pork.
+                Pork capicola tail porchetta meatloaf.
+              </Typography>
+            </Box>
           </Grid>
           <Grid item xs={12}>
             <Box display="flex" flexDirection="row">
-              <Button variant="contained">
+              <Button onClick={handleClick} variant="contained">
+                Bacon
+              </Button>
+              <Button variant="contained" sx={{ marginLeft: 1 }}>
                 <RouterLink
                   style={{ textDecoration: "none", color: "white" }}
                   to={`/About`}

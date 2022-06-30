@@ -74,7 +74,7 @@ function BoilerPlate() {
     </Grid>
       <Box mt={4}>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} sm={3}>
           <BasicCard
               upperSubHead={"Red"}
               mainHeader={"Bianca"}
@@ -84,19 +84,19 @@ function BoilerPlate() {
               imageURL={'https://simplot-media.azureedge.net/-/media/foundation/recipes/us-recipes/buenos-dias-breakfast-burrito_058.jpg?rev=2cc61ab196a741fa9eaa2036c00f8f1d&h=550&w=550&la=en&hash=198E96B9AC824869D72AA47ED07744AF'}
             />
               </Grid>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} sm={3}>
         <BasicCard upperSubHead={"Pre Subheader"} mainHeader={"Main Header"} lowerSubhead={"Lower Subheader"} definition={"Drumstick beef ribs alcatra picanha ham, corned beef cupim tri-tip capicola turducken chicken salami."} 
         button={"Highlight"} 
         imageURL={'https://upload.wikimedia.org/wikipedia/commons/6/60/Burrito.JPG'}
         />        
         </Grid>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} sm={3}>
         <BasicCard upperSubHead={"Pre Subheader"} mainHeader={"Main Header"} lowerSubhead={"Lower Subheader"} definition={"Drumstick beef ribs alcatra picanha ham, corned beef cupim tri-tip capicola turducken chicken salami."} 
         button={"Highlight"} 
         imageURL={'https://www.thespruceeats.com/thmb/i5J_05iux4LH9apYwmQRWVVwX2A=/940x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/basic-rice-and-bean-vegetarian-burrito-3377050-hero-02-925ce8bd71764196b4f9b289716c2fe2.jpg'}
         />        
         </Grid>        
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} sm={3}>
         <BasicCard upperSubHead={"Pre Subheader"} mainHeader={"Main Header"} lowerSubhead={"Lower Subheader"} definition={"Drumstick beef ribs alcatra picanha ham, corned beef cupim tri-tip capicola turducken chicken salami."} 
         button={"Highlight"} 
         imageURL={'https://static.toiimg.com/thumb/62082983.cms?width=1200&height=900'}

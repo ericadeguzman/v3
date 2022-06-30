@@ -31,7 +31,7 @@ function Contact() {
               </Typography>
           </Grid>
           <Header mB={1} mT={0} title="User Details" />
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={4}>
             <TextField
               fullWidth
               id="outlined-basic"
@@ -40,7 +40,7 @@ function Contact() {
               defaultValue="Name"
             />
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={4}>
             <TextField
               fullWidth
               id="outlined-basic"
@@ -49,7 +49,7 @@ function Contact() {
               defaultValue="Last Name"
             />
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={4}>
             <TextField
               fullWidth
               id="outlined-basic"
@@ -58,7 +58,7 @@ function Contact() {
               defaultValue="Email"
             />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} sm={6}>
             <TextField
               fullWidth
               id="outlined-basic"
@@ -67,7 +67,7 @@ function Contact() {
               defaultValue="Purple"
             />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} sm={6}>
             <TextField
               fullWidth
               id="outlined-basic"
