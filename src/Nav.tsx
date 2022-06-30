@@ -70,14 +70,14 @@ export default function DrawerAppBar(props: Props) {
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
             <MenuIcon />
-          </IconButton>
+          </IconButton> 
+       
           <Typography
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            // component="div"
+            sx={{ flexGrow: 1, display: {  sm: 'block' } }}
           >
              <RouterLink style={{textDecoration: "none", color: 'white',}} to={`/`}>
-      Airportal
-      </RouterLink>
+             <Typography>Airportal </Typography> </RouterLink>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
