@@ -13,8 +13,6 @@ import BasicCard from "../components/BasicCard";
 import Grid from "@mui/material/Grid";
 
 
-
-
 function About() {
   
   return (
