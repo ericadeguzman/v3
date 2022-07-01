@@ -24,6 +24,7 @@ import { Link as RouterLink } from "react-router-dom";
 import Button from "@mui/material/Button";
 import Header from "./components/Header";
 import { useState } from "react";
+import SavingsOutlinedIcon from '@mui/icons-material/SavingsOutlined';
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
@@ -39,17 +40,21 @@ function App() {
         <DrawerAppBar />
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <Box my={1}>
-              <Typography variant="h1">Can I have some bacon!?</Typography>
+            <Box my={4}>
+              <Typography variant="h3" component="h1">Can I have some bacon!?</Typography>
             </Box>
           </Grid>
           <Header mB={0} mT={0} title="What are we earting today... " />
           <Grid item xs={12}>
+          <Button onClick={handleClick} variant="contained"  endIcon={<SavingsOutlinedIcon />}>
+              Eat some bacon
+              </Button>
             <Box
-              sx={{ display: isActive ? "none" : "" }}
+              sx={{ display: isActive ? "" : "none" }}
               display="flex"
               flexDirection="column"
               alignItems="center"
+              my={4}
             >
               <Typography sx={{ color: "red" }} variant="h3">
                 We're eatining some Baaaaacooonnnn!
@@ -74,12 +79,12 @@ function App() {
               </Typography>
             </Box>
           </Grid>
+          </Grid>   
+          <Grid container spacing={2}>
           <Grid item xs={12}>
-            <Box display="flex" flexDirection="row">
-              <Button onClick={handleClick} variant="contained">
-                Bacon
-              </Button>
-              <Button variant="contained" sx={{ marginLeft: 1 }}>
+            <Box marginY={2} display="flex" flexDirection="row">
+             
+              <Button variant="contained">
                 <RouterLink
                   style={{ textDecoration: "none", color: "white" }}
                   to={`/About`}
@@ -108,6 +113,7 @@ function App() {
             </Box>
           </Grid>
         </Grid>
+    
       </Container>
     </ThemeProvider>
   );
