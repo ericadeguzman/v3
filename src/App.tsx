@@ -44,7 +44,7 @@ function App() {
               <Typography variant="h3" component="h1">Can I have some bacon!?</Typography>
             </Box>
           </Grid>
-          <Header mB={0} mT={0} title="What are we earting today... " />
+          <Header mB={0} mT={0} title="What are we eating today... " />
           <Grid item xs={12}>
           <Button onClick={handleClick} variant="contained"  endIcon={<SavingsOutlinedIcon />}>
               Eat some bacon
@@ -57,7 +57,7 @@ function App() {
               my={4}
             >
               <Typography sx={{ color: "red" }} variant="h3">
-                We're eatining some Baaaaacooonnnn!
+                We're eating some Baaaaacooonnnn!
               </Typography>
               <img
                 style={{
